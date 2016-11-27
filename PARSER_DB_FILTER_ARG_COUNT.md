@@ -1,5 +1,5 @@
-Filter Parameter Count
-======================
+Filter Argument Count
+=====================
 
 The filter() method should only have a single parameter.
 
