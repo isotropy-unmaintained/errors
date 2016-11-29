@@ -6,13 +6,13 @@ We can't handle regular functions yet. You must pass an arrow function.
 The follow is valid.
 ```javascript
 async function getTodos(who) {
-  return db.todos.filter(t => t.assignee === who).map(t => ({ a: assignee }))
+  return db.todos.filter(t => t.assignee === who).map(t => ({ a: t.assignee }))
 }
 ```
 
 The follow is NOT valid because the argument is a regular function.
 ```javascript
 async function getTodos(who) {
-  return db.todos.filter(t => t.assignee === who).map(function(t) { return { a: assignee }; })
+  return db.todos.filter(t => t.assignee === who).map(function(t) { return { a: t.assignee }; })
 }
 ```
