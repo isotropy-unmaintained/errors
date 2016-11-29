@@ -1,4 +1,4 @@
-Sory argument must be an arrow function
+Sort argument must be an arrow function
 =======================================
 
 We can't handle regular functions yet. You must pass an arrow function.
